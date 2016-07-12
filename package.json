@@ -1,7 +1,7 @@
 {
   "name": "language-antimony",
   "version": "0.2.2",
-  "description": "Antimony language support in Atom",
+  "description": "Support for the Antimony systems biology modeling language",
   "engines": {
     "atom": "*"
   },
