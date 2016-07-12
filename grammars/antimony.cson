@@ -1,0 +1,90 @@
+'scopeName': 'source.antimony'
+'name': 'Antimony'
+'fileTypes': ['sb']
+
+'patterns': [
+
+  # ** Comments **
+
+  {
+    # double slash comment
+    'begin': '//'
+    'end': '$'
+    'name': 'comment.line.antimony'
+  },
+  {
+    # hash comment
+    'begin': '#'
+    'end': '$'
+    'name': 'comment.line.antimony'
+  },
+
+  # ** Values **
+
+  {
+    # numeric constant in scientific notation
+    'match': '\\b([0-9]+[eE]-?[0-9]+)\\b'
+    'name': 'constant.numeric.antimony'
+  },
+  {
+    # numeric constant
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.antimony'
+  },
+  {
+    # string
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.double.antimony'
+  },
+
+  # ** Declarations **
+
+  {
+    'match': '\\b(model)\\s+(\\*\\s*)?(\\w+)\\s*\\(.*\\)'
+    'captures':
+      '1':
+        'name': 'keyword.control.antimony'
+      '3':
+        'name': 'entity.name.function.antmony'
+    'name': 'meta.function.antimony'
+  },
+  {
+    # species
+    'match': '\\bspecies\\b'
+    'name': 'storage.type.antimony'
+  },
+  {
+    # var
+    'match': '\\bvar\\b'
+    'name': 'storage.type.antimony'
+  },
+  {
+    # const
+    'match': '\\bconst\\b'
+    'name': 'storage.type.antimony'
+  },
+  {
+    # unit
+    'match': '\\bunit\\b'
+    'name': 'storage.type.antimony'
+  },
+
+  # ** Keywords **
+
+  {
+    # 'in' keyword
+    'match': '\\bin\\b'
+    'name': 'keyword.control.antimony'
+  },
+  {
+    # 'has' keyword
+    'match': '\\bhas\\b'
+    'name': 'keyword.control.antimony'
+  },
+  {
+    # 'is' keyword
+    'match': '\\bis\\b'
+    'name': 'keyword.control.antimony'
+  }
+]
