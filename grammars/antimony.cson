@@ -50,6 +50,11 @@
     'name': 'meta.function.antimony'
   },
   {
+    # compartment
+    'match': '\\bcompartment\\b'
+    'name': 'storage.type.antimony'
+  },
+  {
     # species
     'match': '\\bspecies\\b'
     'name': 'storage.type.antimony'
