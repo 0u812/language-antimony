@@ -86,5 +86,10 @@
     # 'is' keyword
     'match': '\\bis\\b'
     'name': 'keyword.control.antimony'
+  },
+  {
+    # 'end' keyword
+    'match': '\\bend\\b'
+    'name': 'keyword.control.antimony'
   }
 ]
