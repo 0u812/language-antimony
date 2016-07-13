@@ -1,6 +1,8 @@
 'scopeName': 'source.antimony'
 'name': 'Antimony'
 'fileTypes': ['sb']
+'foldingStartMarker': '\\b(model)\\s+(\\*\\s*)?\\w+\\s*\\(.*\\)'
+'foldingStopMarker': '^\\s*end'
 
 'patterns': [
 
